@@ -1,0 +1,78 @@
+     A*%%TS  SD  20230901  223005  DESADG      REL-V7R5M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      INDARA
+     A                                      CA03
+     A          R PGM010R
+     A*%%TS  SD  20230901  223005  DESADG      REL-V7R5M0  5770-WDS
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A                                  2 23'CREACION'
+     A                                  2 32'DE'
+     A                                  2 35'BASE'
+     A                                  2 40'DE'
+     A                                  2 43'CLIENTES'
+     A                                  6 11'Numero de Identificacion :'
+     A                                  7 11'Tipo de Identificacion   :'
+     A                                  8 11'Nombre del Cliente       :'
+     A                                  9 11'Apellido del Cliente     :'
+     A                                 10 11'Edad del Cliente         :'
+     A                                 11 11'Genero                   :'
+     A                                 12 11'Telefono                 :'
+     A                                 13 11'Direccion                :'
+     A                                 14 11'Ciudad'
+     A                                 14 36':'
+     A            WRC1NID       21S 0I  6 39TEXT('NID')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            WRC1TIP        2S 0I  7 39TEXT('TIPO NID')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            WRC1NOM       30A  I  8 39TEXT('nombre')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            WRC1APE       30A  I  9 39TEXT('APELLIDO')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            WRC1EDA        2S 0I 10 39TEXT('EDAD')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            WRC1GEN        1A  I 11 39TEXT('GENERO')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      VALUES('F' 'M')
+     A                                 11 42'F(FEMENINO) M(MASCULINO)'
+     A            WRC1TEL       10S 0I 12 39TEXT('TELEFONO')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            WRC1DIR       40A  I 13 39TEXT('DIRECCION')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            WRC1CIU       40A  I 14 39TEXT('CIUDAD')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                 12 52'Indicativo:'
+     A            WRC1IND        3A  I 12 64TEXT('indicativo')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                 24  2'F3=Salir'
+     A                                 24 37'ENTER'
+     A                                 23  2'__________________________________-
+     A                                      ___________________________________-
+     A                                      _________'
+     A          R PGM010DM                  SFL
+     A*%%TS  SD  20201204  161653  DESADG      REL-V7R4M0  5770-WDS
+     A                                      TEXT('Pantalla control de mensajes')
+     A                                      SFLMSGRCD(24)
+     A            MSGKEY                    SFLMSGKEY
+     A            PGM010                    SFLPGMQ(10)
+     A          R PGM010DE                  SFLCTL(PGM010DM)
+     A*%%TS  SD  20201204  161653  DESADG      REL-V7R4M0  5770-WDS
+     A                                      TEXT('pantalla control subfile')
+     A                                      SFLDSP
+     A  40                                  SFLINZ
+     A  40                                  SFLEND
+     A                                      SFLSIZ(0015)
+     A                                      SFLPAG(0001)
+     A            PGM010                    SFLPGMQ(10)

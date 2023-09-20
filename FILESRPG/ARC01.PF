@@ -1,0 +1,16 @@
+     A*******************************************************************************
+     A*       ARC01 - ARCHIVO INFORMACION BASICA DE CLIENTES                        *
+     A*******************************************************************************
+     A                                      UNIQUE
+     A          R ARC01R
+     A            ARC1NID       21S 0       TEXT('NUMERO DE IDENTIFICACION')
+     A            ARC1TIP        2S 0       TEXT('TIPO DE IDENTIFICACION')
+     A            ARC1NOM       30A         TEXT('NOMBRE DEL CLIENTE')
+     A            ARC1APE       30A         TEXT('APELLIDO DEL CLIENTE')
+     A            ARC1EDA        2S 0       TEXT('EDAD DEL CLIENTE')
+     A            ARC1SEX        1A         TEXT('SEXO')
+     A            ARC1TEL       10S 0       TEXT('TELEFONO')
+     A            ARC1IND        3A         TEXT('INDICATIVO')
+     A            ARC1DIR       40A         TEXT('DIRECCION')
+     A            ARC1CIU       40A         TEXT('CIUDAD')
+     A          K ARC1NID

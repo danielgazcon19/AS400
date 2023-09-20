@@ -1,0 +1,81 @@
+     A*%%TS  SD  20230918  224714  DESADG      REL-V7R5M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R CL1                       SFL
+     A*%%TS  SD  20230918  224003  DESADG      REL-V7R5M0  5770-WDS
+     A            WOPC           1A  B  9  3
+     A            WCNID         21S 0O  9  8
+     A            WCNOMAPE      40   O  9 34
+     A          R CL1CTL                    SFLCTL(CL1)
+     A*%%TS  SD  20230918  224003  DESADG      REL-V7R5M0  5770-WDS
+     A                                      SFLSIZ(2000)
+     A                                      SFLPAG(0010)
+     A                                      CA03(03 'Salir')
+     A                                      CA05(05 'Renovar')
+     A                                      CA06(06 'Crear')
+     A                                      OVERLAY
+     A  90                                  SFLDSP
+     A  91                                  SFLDSPCTL
+     A  94                                  SFLINZ
+     A  92                                  SFLCLR
+     A  93                                  SFLEND
+     A                                  2 32' Consulta de Clientes '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(RI)
+     A                                      COLOR(BLU)
+     A                                  4  2'Buscar Por numero de Identificacio-
+     A                                      n:'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(TRQ)
+     A            WNID          21S 0B  4 40
+     A                                  6  2'Opciones:'
+     A                                  6 14'2 = Modificar   4 = Eliminar   5 =-
+     A                                       Consultar'
+     A                                      COLOR(BLU)
+     A                                  8  2'Opc   Numero de Identificacion  No-
+     A                                      mbres y Apellidos Cliente          -
+     A                                         '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(RI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(WHT)
+     A          R CONSUL
+     A*%%TS  SD  20230918  224714  DESADG      REL-V7R5M0  5770-WDS
+     A                                      CA03(03 'Salir')
+     A                                  2 25' Consulta de Clientes '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(RI)
+     A                                      COLOR(BLU)
+     A                                  4  2'Numero de Identificacion:'
+     A                                      COLOR(WHT)
+     A            WCNID         21S 0O  4 29
+     A                                  5  2'Tipo de Identificion:'
+     A                                      COLOR(WHT)
+     A            WCTINID        2S 0O  5 29
+     A                                  6  2'Nombre del Cliente:'
+     A                                      COLOR(WHT)
+     A            WCNOM         30A  O  6 29
+     A                                  7  2'Apellido de Cliente:'
+     A                                      COLOR(WHT)
+     A            WCAPE         30A  O  7 29
+     A                                  8  2'Edad del Cliente:'
+     A                                      COLOR(WHT)
+     A            WCEDA          3S 0O  8 29
+     A                                  9  2'Genero:'
+     A                                      COLOR(WHT)
+     A            WCGEN          1A  O  9 29
+     A                                  9 32'F(Femenino) M(Masculino)'
+     A                                      COLOR(TRQ)
+     A                                 10  2'Telefono:'
+     A                                      COLOR(WHT)
+     A            WCTEL         10S 0O 10 29
+     A                                 10 41'Indicativo:'
+     A                                      COLOR(WHT)
+     A            WCIND          3A  O 10 53
+     A                                 11  2'Direccion:'
+     A                                      COLOR(WHT)
+     A            WCDIR         40A  O 11 29
+     A                                 12  2'Ciudad:'
+     A                                      COLOR(WHT)
+     A            WCCIU         40A  O 12 29

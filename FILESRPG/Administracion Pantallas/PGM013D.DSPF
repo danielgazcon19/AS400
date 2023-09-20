@@ -1,0 +1,62 @@
+     A*%%TS  SD  20210720  152459  DESADG      REL-V7R4M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      INDARA
+     A                                      CA03
+     A                                      CA10
+     A          R PGM013R
+     A*%%TS  SD  20210720  152459  DESADG      REL-V7R4M0  5770-WDS
+     A                                  1  2DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2TIME
+     A                                  2 23'ELIMINACION BASE DE CLIENTES'
+     A                                  6 11'Numero de Identificacion :'
+     A  11                              7 11'Tipo de Identificacion   :'
+     A  11                              8 11'Nombre del Cliente       :'
+     A  11                              9 11'Apellido del Cliente     :'
+     A  11                             10 11'Edad del Cliente         :'
+     A  11                             11 11'Genero                   :'
+     A  11                             12 11'Telefono                 :'
+     A  11                             13 11'Direccion                :'
+     A  11                             14 11'Ciudad'
+     A                                 14 36':'
+     A  11                             11 42'F(FEMENINO) F(MASCULINO)'
+     A  11                             12 52'Indicativo:'
+     A                                 24  2'F3=Salir'
+     A                                 24 37'ENTER'
+     A                                 23  2'__________________________________-
+     A                                      ___________________________________-
+     A                                      _________'
+     A            WRC1NID       21S 0B  6 39DSPATR(HI)
+     A                                      DSPATR(UL)
+     A  11                                  DSPATR(PR)
+     A                                 24 49'F10:ACTUALIZAR'
+     A  11        WRC1TIP        2S 0O  7 39DSPATR(UL)
+     A  11        WRC1NOM       30A  O  8 39DSPATR(UL)
+     A  11        WRC1APE       30A  O  9 39DSPATR(UL)
+     A  11        WRC1EDA        2S 0O 10 39DSPATR(UL)
+     A  11        WRC1GEN        1A  O 11 39DSPATR(UL)
+     A  11        WRC1TEL       10S 0O 12 39DSPATR(UL)
+     A  11        WRC1IND        3A  O 12 64DSPATR(UL)
+     A  11        WRC1DIR       40A  O 13 39DSPATR(UL)
+     A  11        WRC1CIU       40A  O 14 39DSPATR(UL)
+     A  11                             17 23'Desea Eliminar el Registro?'
+     A  11        COMFIRMA       1A  B 17 52DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      VALUES('S' 'N')
+     A  11                             17 55'SI o NO'
+     A          R PGM013DM                  SFL
+     A*%%TS  SD  20201204  161653  DESADG      REL-V7R4M0  5770-WDS
+     A                                      TEXT('Pantalla control de mensajes')
+     A                                      SFLMSGRCD(24)
+     A            MSGKEY                    SFLMSGKEY
+     A            PGM013                    SFLPGMQ(10)
+     A          R PGM013DE                  SFLCTL(PGM013DM)
+     A*%%TS  SD  20201204  161653  DESADG      REL-V7R4M0  5770-WDS
+     A                                      TEXT('pantalla control subfile')
+     A                                      SFLDSP
+     A  40                                  SFLINZ
+     A  40                                  SFLEND
+     A                                      SFLSIZ(0015)
+     A                                      SFLPAG(0001)
+     A            PGM013                    SFLPGMQ(10)
