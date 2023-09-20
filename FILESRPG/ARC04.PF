@@ -1,0 +1,20 @@
+     A*=================================================================*
+     A*    ARC04 - INFORMACION DE PRODUCTOS                             *
+     A*=================================================================*
+     A                                      UNIQUE
+     A          R ARC04R
+     A            ARC4PRO        5S 0       TEXT('CODIGO DE PRODUCTO')
+     A            ARC4DES       50A         TEXT('NOMBRE PRODUCTO')
+     A            ARC4DE1       50A         TEXT('DETALLE 1')
+     A            ARC4VA1        3S 0       TEXT('VALOR 1')
+     A            ARC4DE2       50A         TEXT('DETALLE 2')
+     A            ARC4VA2        3S 0       TEXT('VALOR 2')
+     A            ARC4DE3       50A         TEXT('DETALLE 3')
+     A            ARC4VA3        3S 0       TEXT('VALOR 3')
+     A            ARC4DE4       50A         TEXT('DETALLE 4')
+     A            ARC4VA4        3S 0       TEXT('VALOR 4')
+     A            ARC4DE5       50A         TEXT('DETALLE 5')
+     A            ARC4VA5        3S 0       TEXT('VALOR 5')
+     A            ARC4DE6       50A         TEXT('DETALLE 6')
+     A            ARC4VA6        3S 0       TEXT('VALOR 6')
+     A          K ARC4PRO

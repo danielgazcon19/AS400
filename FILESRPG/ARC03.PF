@@ -1,0 +1,10 @@
+     A*=================================================================*
+     A*    ARC03 - INFORMACION DE CIUDADES                              *
+     A*=================================================================*
+     A                                      UNIQUE
+     A          R ARC03R
+     A            ARC3CIU        5S 0       TEXT('CODIGO DE CIUDAD')
+     A            ARC3NOC       50A         TEXT('NOMBRE DE CIUDAD')
+     A            ARC3ESC       50A         TEXT('ESTADO/DEPARTAMENTO')
+     A            ARC3PAI       50A         TEXT('PAIS')
+     A          K ARC3CIU

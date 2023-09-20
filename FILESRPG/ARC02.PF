@@ -1,0 +1,11 @@
+     A*=================================================================*
+     A*    ARC02 - INFORMACION BASICA DEL CLIENTE                       *
+     A*=================================================================*
+     A                                      UNIQUE
+     A          R ARC02R
+     A            ARC2NID       21A         TEXT('NUMERO DE IDENTIFICACION')
+     A            ARC2NOM       50A         TEXT('NOMBRE DEL CLIENTE')
+     A            ARC2APE       50A         TEXT('APELLIO DEL CLIENTE')
+     A            ARC2CIU        5S 0       TEXT('CODIGO CIUDAD NACIMIENTO')
+     A            ARC2EDA        3S 0       TEXT('EDAD DEL CLIENTE')
+     A          K ARC2NID
